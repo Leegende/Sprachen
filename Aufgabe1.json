@@ -1,0 +1,20 @@
+﻿{
+  "name": "Aufgabe1",
+  "description": "",
+  "language": "L",
+  "grammar": {
+    "inputText": "EPSILON -> 0,1,A,B,C,D,E\nStart -> EPSILON",
+    "testInput": "",
+    "lastInput": [],
+    "bnf": [],
+    "lex": {
+      "rules": [
+        {
+          "expression": "[\\t\\r\\n\\s]",
+          "name": "IGNORE"
+        }
+      ]
+    }
+  },
+  "text": "EPSILON -> 0,1,A,B,C,D,E\nStart -> EPSILON"
+}
