@@ -1,0 +1,221 @@
+﻿{
+  "name": "Aufgabe1",
+  "description": "",
+  "language": "L",
+  "grammar": {
+    "inputText": "Start -> 0 Start | 1 Start | 2 Start | 3 Start | 4 Start  | 5 Start  | 6 Start  | 7 Start  | 8  Start | 9 Start  | , Start | EPSILON\n",
+    "testInput": "9231,123451151",
+    "lastInput": [
+      "9231,123451151",
+      "9231,1234511512512",
+      "9,1234511512512"
+    ],
+    "bnf": [
+      {
+        "name": "Start",
+        "rhs": [
+          [
+            [
+              {
+                "name": "0",
+                "type": "t"
+              },
+              {
+                "name": "Start",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\"0\", Nodes:[]},$2 ] };"
+          ],
+          [
+            [
+              {
+                "name": "1",
+                "type": "t"
+              },
+              {
+                "name": "Start",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\"1\", Nodes:[]},$2 ] };"
+          ],
+          [
+            [
+              {
+                "name": "2",
+                "type": "t"
+              },
+              {
+                "name": "Start",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\"2\", Nodes:[]},$2 ] };"
+          ],
+          [
+            [
+              {
+                "name": "3",
+                "type": "t"
+              },
+              {
+                "name": "Start",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\"3\", Nodes:[]},$2 ] };"
+          ],
+          [
+            [
+              {
+                "name": "4",
+                "type": "t"
+              },
+              {
+                "name": "Start",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\"4\", Nodes:[]},$2 ] };"
+          ],
+          [
+            [
+              {
+                "name": "5",
+                "type": "t"
+              },
+              {
+                "name": "Start",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\"5\", Nodes:[]},$2 ] };"
+          ],
+          [
+            [
+              {
+                "name": "6",
+                "type": "t"
+              },
+              {
+                "name": "Start",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\"6\", Nodes:[]},$2 ] };"
+          ],
+          [
+            [
+              {
+                "name": "7",
+                "type": "t"
+              },
+              {
+                "name": "Start",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\"7\", Nodes:[]},$2 ] };"
+          ],
+          [
+            [
+              {
+                "name": "8",
+                "type": "t"
+              },
+              {
+                "name": "Start",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\"8\", Nodes:[]},$2 ] };"
+          ],
+          [
+            [
+              {
+                "name": "9",
+                "type": "t"
+              },
+              {
+                "name": "Start",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\"9\", Nodes:[]},$2 ] };"
+          ],
+          [
+            [
+              {
+                "name": ",",
+                "type": "t"
+              },
+              {
+                "name": "Start",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\",\", Nodes:[]},$2 ] };"
+          ],
+          [
+            [],
+            "$$ = {Content:\"Start\", Nodes:[ {Content:\"EPSILON\", Nodes:[]} ] };"
+          ]
+        ]
+      }
+    ],
+    "lex": {
+      "rules": [
+        {
+          "expression": "0",
+          "name": "0"
+        },
+        {
+          "expression": "1",
+          "name": "1"
+        },
+        {
+          "expression": "2",
+          "name": "2"
+        },
+        {
+          "expression": "3",
+          "name": "3"
+        },
+        {
+          "expression": "4",
+          "name": "4"
+        },
+        {
+          "expression": "5",
+          "name": "5"
+        },
+        {
+          "expression": "6",
+          "name": "6"
+        },
+        {
+          "expression": "7",
+          "name": "7"
+        },
+        {
+          "expression": "8",
+          "name": "8"
+        },
+        {
+          "expression": "9",
+          "name": "9"
+        },
+        {
+          "expression": ",",
+          "name": ","
+        },
+        {
+          "expression": "[\\t\\r\\n\\s]",
+          "name": "IGNORE"
+        }
+      ]
+    }
+  },
+  "text": "Start -> 0 Start | 1 Start | 2 Start | 3 Start | 4 Start  | 5 Start  | 6 Start  | 7 Start  | 8  Start | 9 Start  | , Start | EPSILON\n"
+}

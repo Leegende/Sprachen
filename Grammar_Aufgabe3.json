@@ -1,0 +1,751 @@
+﻿{
+  "name": "Aufgabe2",
+  "description": "",
+  "language": "L",
+  "grammar": {
+    "inputText": "Start -> First Rest  \nRest -> First Rest | EPSILON  \nFirst -> a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z  \n",
+    "testInput": "Rindfleischettiketierungsueberwachungsaufgabenuebertragungsgesetz",
+    "lastInput": [
+      "Rindfleischettiketierungsueberwachungsaufgabenuebertragungsgesetz",
+      "Rindfleischettiketierungsaufgabenübertragungsgesetz",
+      "afadfa",
+      "",
+      "Laenger",
+      "A",
+      "abbbaa",
+      "abbba"
+    ],
+    "bnf": [
+      {
+        "name": "Start",
+        "rhs": [
+          [
+            [
+              {
+                "name": "First",
+                "type": "nt"
+              },
+              {
+                "name": "Rest",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Start\", Nodes:[ $1,$2 ] };"
+          ]
+        ]
+      },
+      {
+        "name": "Rest",
+        "rhs": [
+          [
+            [
+              {
+                "name": "First",
+                "type": "nt"
+              },
+              {
+                "name": "Rest",
+                "type": "nt"
+              }
+            ],
+            "$$ = {Content:\"Rest\", Nodes:[ $1,$2 ] };"
+          ],
+          [
+            [],
+            "$$ = {Content:\"Rest\", Nodes:[ {Content:\"EPSILON\", Nodes:[]} ] };"
+          ]
+        ]
+      },
+      {
+        "name": "First",
+        "rhs": [
+          [
+            [
+              {
+                "name": "a",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"a\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "b",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"b\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "c",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"c\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "d",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"d\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "e",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"e\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "f",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"f\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "g",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"g\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "h",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"h\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "i",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"i\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "j",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"j\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "k",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"k\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "l",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"l\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "m",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"m\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "n",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"n\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "o",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"o\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "p",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"p\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "q",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"q\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "r",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"r\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "s",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"s\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "t",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"t\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "u",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"u\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "v",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"v\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "w",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"w\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "x",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"x\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "y",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"y\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "z",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"z\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "A",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"A\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "B",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"B\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "C",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"C\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "D",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"D\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "E",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"E\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "F",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"F\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "G",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"G\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "H",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"H\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "I",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"I\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "J",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"J\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "K",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"K\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "L",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"L\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "M",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"M\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "N",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"N\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "O",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"O\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "P",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"P\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "Q",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"Q\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "R",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"R\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "S",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"S\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "T",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"T\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "U",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"U\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "V",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"V\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "W",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"W\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "X",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"X\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "Y",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"Y\", Nodes:[]} ] };"
+          ],
+          [
+            [
+              {
+                "name": "Z",
+                "type": "t"
+              }
+            ],
+            "$$ = {Content:\"First\", Nodes:[ {Content:\"Z\", Nodes:[]} ] };"
+          ]
+        ]
+      }
+    ],
+    "lex": {
+      "rules": [
+        {
+          "expression": "a",
+          "name": "a"
+        },
+        {
+          "expression": "b",
+          "name": "b"
+        },
+        {
+          "expression": "c",
+          "name": "c"
+        },
+        {
+          "expression": "d",
+          "name": "d"
+        },
+        {
+          "expression": "e",
+          "name": "e"
+        },
+        {
+          "expression": "f",
+          "name": "f"
+        },
+        {
+          "expression": "g",
+          "name": "g"
+        },
+        {
+          "expression": "h",
+          "name": "h"
+        },
+        {
+          "expression": "i",
+          "name": "i"
+        },
+        {
+          "expression": "j",
+          "name": "j"
+        },
+        {
+          "expression": "k",
+          "name": "k"
+        },
+        {
+          "expression": "l",
+          "name": "l"
+        },
+        {
+          "expression": "m",
+          "name": "m"
+        },
+        {
+          "expression": "n",
+          "name": "n"
+        },
+        {
+          "expression": "o",
+          "name": "o"
+        },
+        {
+          "expression": "p",
+          "name": "p"
+        },
+        {
+          "expression": "q",
+          "name": "q"
+        },
+        {
+          "expression": "r",
+          "name": "r"
+        },
+        {
+          "expression": "s",
+          "name": "s"
+        },
+        {
+          "expression": "t",
+          "name": "t"
+        },
+        {
+          "expression": "u",
+          "name": "u"
+        },
+        {
+          "expression": "v",
+          "name": "v"
+        },
+        {
+          "expression": "w",
+          "name": "w"
+        },
+        {
+          "expression": "x",
+          "name": "x"
+        },
+        {
+          "expression": "y",
+          "name": "y"
+        },
+        {
+          "expression": "z",
+          "name": "z"
+        },
+        {
+          "expression": "A",
+          "name": "A"
+        },
+        {
+          "expression": "B",
+          "name": "B"
+        },
+        {
+          "expression": "C",
+          "name": "C"
+        },
+        {
+          "expression": "D",
+          "name": "D"
+        },
+        {
+          "expression": "E",
+          "name": "E"
+        },
+        {
+          "expression": "F",
+          "name": "F"
+        },
+        {
+          "expression": "G",
+          "name": "G"
+        },
+        {
+          "expression": "H",
+          "name": "H"
+        },
+        {
+          "expression": "I",
+          "name": "I"
+        },
+        {
+          "expression": "J",
+          "name": "J"
+        },
+        {
+          "expression": "K",
+          "name": "K"
+        },
+        {
+          "expression": "L",
+          "name": "L"
+        },
+        {
+          "expression": "M",
+          "name": "M"
+        },
+        {
+          "expression": "N",
+          "name": "N"
+        },
+        {
+          "expression": "O",
+          "name": "O"
+        },
+        {
+          "expression": "P",
+          "name": "P"
+        },
+        {
+          "expression": "Q",
+          "name": "Q"
+        },
+        {
+          "expression": "R",
+          "name": "R"
+        },
+        {
+          "expression": "S",
+          "name": "S"
+        },
+        {
+          "expression": "T",
+          "name": "T"
+        },
+        {
+          "expression": "U",
+          "name": "U"
+        },
+        {
+          "expression": "V",
+          "name": "V"
+        },
+        {
+          "expression": "W",
+          "name": "W"
+        },
+        {
+          "expression": "X",
+          "name": "X"
+        },
+        {
+          "expression": "Y",
+          "name": "Y"
+        },
+        {
+          "expression": "Z",
+          "name": "Z"
+        },
+        {
+          "expression": "[\\t\\r\\n\\s]",
+          "name": "IGNORE"
+        }
+      ]
+    }
+  },
+  "text": "Start -> First Rest  \nRest -> First Rest | EPSILON  \nFirst -> a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z  \n"
+}
