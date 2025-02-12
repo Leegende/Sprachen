@@ -1,0 +1,4 @@
+a) Typ-1 Sprache, weil die linke Seite jeder Produktionsregel immer kleinergleich der rechten Seite ist
+   Es ist auch keine Typ-2 oder Typ-3 Sprache da auf der linken Seiten mehr als ein Nichtterminal steht und mehr als ein Terminal auf der rechten Seite ist
+b) S -S-> aAbc -Ab-> abAc -Ac-> abBbcc -bB-> aBbbcc -aB-> aabbcc
+c) L(G) erzeugt Wörter mit gleichvielen mehr als ein null großen a,b und c alphabetisch sortiert. Z.B: abc, aabbcc, aaabbbccc
